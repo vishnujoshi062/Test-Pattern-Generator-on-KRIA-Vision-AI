@@ -1,0 +1,15 @@
+--- a/src/xdpdma_video_example.c (stock Vitis example)
++++ b/src/xdpdma_video_example.c (this repo)
+@@ -242,8 +242,10 @@
+ 	 * Here in this example we are going to demonstrate
+ 	 * graphics overlay over the TPG video.
+ 	 */
+-	XAVBuf_InputVideoSelect(AVBufPtr, XAVBUF_VIDSTREAM1_NONE,
+-						XAVBUF_VIDSTREAM2_NONLIVE_GFX);
++	// XAVBuf_InputVideoSelect(AVBufPtr, XAVBUF_VIDSTREAM1_NONE,
++	// 						XAVBUF_VIDSTREAM2_NONLIVE_GFX);
++    XAVBuf_InputVideoSelect(AVBufPtr, XAVBUF_VIDSTREAM1_TPG,
++							XAVBUF_VIDSTREAM2_NONE);
+ 	/* Configure Video pipeline for graphics channel */
+ 	XAVBuf_ConfigureGraphicsPipeline(AVBufPtr);
+ 	/* Configure the output video pipeline */

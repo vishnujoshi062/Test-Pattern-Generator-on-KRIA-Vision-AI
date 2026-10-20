@@ -1,0 +1,32 @@
+# ---- Vivado ----
+vivado/build/
+*.jou
+*.log
+*.str
+.Xil/
+*.cache/
+*.runs/
+*.gen/
+*.hw/
+*.ip_user_files/
+*.sim/
+*.srcs/
+
+# ---- Vitis ----
+**/build/
+**/export/
+**/.metadata/
+**/.analytics
+**/logs/
+**/_ide/bitstream/
+**/_ide/psinit/
+**/_ide/.peers.ini
+**/.vscode/
+.lock
+
+# ---- Misc ----
+*.zip
+*.bit
+*.elf
+Thumbs.db
+.DS_Store
